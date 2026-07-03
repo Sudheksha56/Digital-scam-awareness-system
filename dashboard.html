@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='dashboard.css') }}">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <h2>Digital Scam</h2>
+
+        <a href="/dashboard">
+            <i class="fa-solid fa-house"></i>
+            Dashboard
+        </a>
+
+        <a href="/report">
+            <i class="fa-solid fa-file-circle-plus"></i>
+            Report Scam
+        </a>
+
+        <a href="/view_reports">
+            <i class="fa-solid fa-table"></i>
+            View Reports
+        </a>
+
+        <a href="/awareness">
+            <i class="fa-solid fa-book-open"></i>
+            Awareness
+        </a>
+
+        <li>
+
+        <a href="/profile">
+
+        👤 Profile
+
+        </a>
+
+        </li>
+
+        <a href="/logout">Logout</a>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+    <h1>Dashboard</h1>
+
+    <p>Welcome to Digital Scam Awareness & Reporting System</p>
+
+    <!-- Statistics Cards -->
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Total Reports</h3>
+            <h1>{{ total_reports }}</h1>
+            <p>All Submitted Reports</p>
+        </div>
+
+        <div class="card">
+            <h3>Pending Reports</h3>
+            <h2>{{ pending_reports }}</h2>
+            <p>Waiting for Review</p>
+        </div>
+
+        <div class="card">
+            <h3>Resolved Reports</h3>
+            <h2>{{ resolved_reports }}</h2>
+            <p>Completed Cases</p>
+        </div>
+
+        <div class="card">
+            <h3>Awareness Posts</h3>
+            <h2>{{ awareness_posts }}</h2>
+            <p>Educational Articles</p>
+        </div>
+
+    </div>
+    <!-- Reports and Awareness -->
+
+<div class="dashboard-content">
+
+    <!-- Recent Reports -->
+
+    <div class="reports">
+
+        <h2>Recent Reports</h2>
+
+        <table>
+
+            <tr>
+                <th>ID</th>
+                <th>Category</th>
+                <th>Status</th>
+            </tr>
+
+           {% for report in recent_reports %}
+
+           <tr>
+
+              <td>{{ report[0] }}</td>
+
+              <td>{{ report[4] }}</td>
+
+              <td>Submitted</td>
+
+         </tr>
+
+         {% endfor %}
+
+        </table>
+
+    </div>
+
+    <!-- Awareness -->
+
+    <div class="awareness">
+
+        <h2>Latest Scam Awareness</h2>
+
+        <div class="news">
+
+            <img src="{{ url_for('static', filename='images/phishing.jpg') }}">
+
+            <div>
+
+                <h4>Beware of Phishing Emails</h4>
+
+                <p>Never click unknown links.</p>
+
+            </div>
+
+        </div>
+
+        <div class="news">
+
+            <img src="{{ url_for('static', filename='images/otp.jpg') }}">
+
+            <div>
+
+                <h4>OTP Scam Alert</h4>
+
+                <p>Never share OTP with anyone.</p>
+
+            </div>
+
+        </div>
+
+        <div class="news">
+
+            <img src="{{ url_for('static', filename='images/job-scam.jpg') }}">
+
+            <div>
+
+                <h4>Fake Job Offers</h4>
+
+                <p>Always verify company details.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    
+</div>
+</div>
+
+</body>
+</html>

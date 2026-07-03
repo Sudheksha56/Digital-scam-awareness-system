@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Digital Scam Awareness & Reporting System</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#E3F2FD,#F1F8E9,#FFF8E1);
+    color:#333;
+}
+
+/* Header */
+header{
+    background:#1976D2;
+    color:white;
+    text-align:center;
+    padding:25px;
+    font-size:36px;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Hero Section */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h2{
+    color:#0D47A1;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#444;
+    font-size:20px;
+    line-height:1.8;
+}
+
+/* Buttons */
+.buttons{
+    margin-top:35px;
+}
+
+.buttons a{
+    display:inline-block;
+    margin:10px;
+    padding:15px 30px;
+    text-decoration:none;
+    background:#43A047;
+    color:white;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.buttons a:hover{
+    background:#2E7D32;
+    transform:translateY(-4px);
+}
+
+/* Service Cards */
+.services{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.card{
+    width:280px;
+    background:white;
+    margin:20px;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#1565C0;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.6;
+}
+
+/* Footer */
+footer{
+    background:#1976D2;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+  
+</style>
+
+</head>
+
+<body>
+
+<h1>Digital Scam Awareness & Reporting System</h1>
+
+<div class="container">
+
+<h2>Welcome</h2>
+
+<p>
+This website helps users learn about digital scams,
+report scam incidents,
+and check the status of their complaints.
+</p>
+
+<h3>Available Services</h3>
+
+<p>
+
+✔ User Registration<br><br>
+
+✔ User Login<br><br>
+
+✔ Scam Awareness<br><br>
+
+✔ Report Scam<br><br>
+
+✔ Check Report Status<br><br>
+
+✔ Admin Login
+
+</p>
+
+<br>
+
+<a href="/login">User Login</a>
+
+<a href="/register">Register</a>
+
+<a href="/admin">Admin Login</a>
+
+</div>
+
+<div class="footer">
+
+<p>© 2026 Digital Scam Awareness & Reporting System</p>
+
+</div>
+
+</body>
+</html>

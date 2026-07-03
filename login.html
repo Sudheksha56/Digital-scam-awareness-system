@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Scam Awareness - Login</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Panel -->
+
+    <div class="left-panel">
+
+        <img src="{{ url_for('static', filename='images/logo.png') }}" class="logo">
+
+        <h1>Digital Scam Awareness & Reporting System</h1>
+
+        <p class="subtitle">
+            Stay Safe • Report Scams • Protect Others
+        </p>
+
+        <div class="features">
+
+            <div class="feature">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Report Online Scams Securely</span>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-user-shield"></i>
+                <span>Protect Your Personal Information</span>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span>Learn About Latest Scam Techniques</span>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Track Scam Reports Easily</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Right Panel -->
+
+    <div class="right-panel">
+
+        <div class="login-box">
+
+            <h2>Welcome Back</h2>
+
+            <p>Login to continue</p>
+
+            <form method="POST">
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email Address"
+                        required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                        required>
+
+                </div>
+
+                <div class="options">
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Remember Me
+
+                    </label>
+
+                    <a href="#">Forgot Password?</a>
+
+                </div>
+
+                <button type="submit" class="login-btn">
+
+                    Login
+
+                </button>
+
+            </form>
+
+            <div class="bottom-links">
+
+                <p>
+
+                    Don't have an account?
+
+                    <a href="/register">
+
+                        Register
+
+                    </a>
+
+                </p>
+
+                <a href="/">
+
+                    ← Back to Home
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Reports</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Search Scam Reports</h1>
+
+<form method="POST">
+
+    Enter Scam Type:
+
+    <input type="text" name="keyword">
+
+    <input type="submit" value="Search">
+
+</form>
+
+<br>
+
+<table border="1">
+
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Scam Type</th>
+</tr>
+
+{% for report in reports %}
+<tr>
+    <td>{{ report[0] }}</td>
+    <td>{{ report[1] }}</td>
+    <td>{{ report[2] }}</td>
+    <td>{{ report[3] }}</td>
+    <td>{{ report[4] }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/dashboard">Back to Dashboard</a>
+
+</body>
+</html>

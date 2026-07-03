@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Report Status</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Check Your Report Status</h1>
+
+<form method="POST">
+
+    Enter Your Email:<br><br>
+
+    <input type="email" name="email" required>
+
+    <br><br>
+
+    <input type="submit" value="Check Status">
+
+</form>
+
+{% if report %}
+
+<hr>
+
+<h2>Report Details</h2>
+
+<p><b>Name:</b> {{ report[1] }}</p>
+
+<p><b>Email:</b> {{ report[2] }}</p>
+
+<p><b>Phone:</b> {{ report[3] }}</p>
+
+<p><b>Scam Type:</b> {{ report[4] }}</p>
+
+<p><b>Status:</b> {{ report[5] }}</p>
+
+{% endif %}
+
+</body>
+</html>

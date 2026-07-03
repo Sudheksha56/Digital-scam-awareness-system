@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Report Status</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Update Report Status</h1>
+
+<form method="POST">
+
+    <p><strong>Report ID:</strong> {{ report[0] }}</p>
+
+    <p><strong>Name:</strong> {{ report[1] }}</p>
+
+    <p><strong>Scam Type:</strong> {{ report[4] }}</p>
+
+    <label>Select Status:</label><br><br>
+
+    <select name="status">
+
+        <option value="Pending">Pending</option>
+
+        <option value="Under Review">Under Review</option>
+
+        <option value="Resolved">Resolved</option>
+
+    </select>
+
+    <br><br>
+
+    <input type="submit" value="Update Status">
+
+</form>
+
+<br>
+
+<a href="/view_reports">Back to Reports</a>
+
+</body>
+</html>

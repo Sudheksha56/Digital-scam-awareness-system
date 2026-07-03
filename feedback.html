@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Feedback Form</h1>
+
+<form method="POST">
+
+    Name:<br>
+    <input type="text" name="name" required><br><br>
+
+    Email:<br>
+    <input type="email" name="email" required><br><br>
+
+    Feedback:<br>
+    <textarea name="message" rows="5" cols="40" required></textarea><br><br>
+
+    <input type="submit" value="Submit Feedback">
+
+</form>
+
+<br>
+
+<a href="/dashboard">Back to Dashboard</a>
+
+</body>
+</html>

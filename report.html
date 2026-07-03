@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report a Scam</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Report a Scam</h1>
+
+<form method="POST">
+
+    Victim Name:<br>
+    <input type="text" name="name" required><br><br>
+
+    Email:<br>
+    <input type="email" name="email" required><br><br>
+
+    Phone Number:<br>
+    <input type="text" name="phone" required><br><br>
+
+    Scam Type:<br>
+    <input type="text" name="scamtype" required><br><br>
+
+    Scam Description:<br>
+    <textarea name="description" rows="5" cols="40"></textarea><br><br>
+
+    Date of Incident:<br>
+    <input type="date" name="date"><br><br>
+
+    <input type="submit" value="Submit Report">
+
+</form>
+
+<br>
+
+<a href="/dashboard">Back to Dashboard</a>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Admin Dashboard</h1>
+
+<h2>Analytics</h2>
+
+<p>Total Reports: {{ total_reports }}</p>
+
+<p>UPI Fraud Reports: {{ upi_count }}</p>
+
+<p>Job Scam Reports: {{ job_count }}</p>
+
+<p>OTP Scam Reports: {{ otp_count }}</p>
+
+<br>
+
+<a href="/view_reports">View Reports</a>
+<br><br>
+
+<a href="/search">Search Reports</a>
+<br><br>
+
+<a href="/view_feedback">View User Feedback</a>
+<br><br>
+
+<a href="/">Logout</a>
+
+</body>
+</html>

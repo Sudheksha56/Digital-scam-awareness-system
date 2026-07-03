@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Feedback</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>User Feedback</h1>
+
+<table border="1">
+
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Feedback</th>
+</tr>
+
+{% for feedback in feedbacks %}
+
+<tr>
+    <td>{{ feedback[0] }}</td>
+    <td>{{ feedback[1] }}</td>
+    <td>{{ feedback[2] }}</td>
+    <td>{{ feedback[3] }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/admin_dashboard">Back to Admin Dashboard</a>
+
+</body>
+</html>
