@@ -1,0 +1,246 @@
+/* ===========================
+   Digital Scam Awareness System
+   style.css
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#E3F2FD,#E8F5E9,#FFFDE7);
+    color:#212121;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background:#1565C0;
+    color:white;
+    text-align:center;
+    padding:25px;
+    font-size:35px;
+    font-weight:bold;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Headings */
+
+h1{
+    color:#1565C0;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+h2{
+    color:#2E7D32;
+    margin-top:20px;
+}
+
+h3{
+    color:#1565C0;
+}
+
+/* Paragraph */
+
+p{
+    font-size:18px;
+    color:#424242;
+}
+
+/* Navigation Buttons */
+
+a{
+    text-decoration:none;
+    background:#1976D2;
+    color:white;
+    padding:12px 22px;
+    border-radius:8px;
+    display:inline-block;
+    margin:8px;
+    transition:0.3s;
+}
+
+a:hover{
+    background:#0D47A1;
+}
+
+/* Form */
+
+form{
+    margin-top:20px;
+}
+
+label{
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    margin-bottom:15px;
+    border:1px solid #BDBDBD;
+    border-radius:8px;
+    font-size:16px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border:2px solid #1976D2;
+    outline:none;
+}
+
+/* Submit Button */
+
+input[type=submit],
+button{
+
+    background:#43A047;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+input[type=submit]:hover,
+button:hover{
+
+    background:#2E7D32;
+}
+
+/* Tables */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:white;
+}
+
+th{
+    background:#1565C0;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#F5F5F5;
+}
+
+tr:hover{
+    background:#E3F2FD;
+}
+
+/* Cards */
+
+.card{
+
+    background:white;
+
+    border-radius:15px;
+
+    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+
+    padding:20px;
+
+    margin:20px;
+
+    text-align:center;
+}
+
+/* Footer */
+
+footer{
+
+    background:#1565C0;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+}
+    /* Edit Profile Page */
+
+.profile-container{
+    width:450px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+.profile-container h2{
+    text-align:center;
+    color:#0d47a1;
+    margin-bottom:25px;
+}
+
+.profile-container label{
+    font-weight:bold;
+    display:block;
+    margin-top:15px;
+}
+
+.profile-container input{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.btn{
+    display:inline-block;
+    width:100%;
+    padding:12px;
+    margin-top:20px;
+    background:#1565c0;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#0d47a1;
+}
+
+.dashboard-body{
+    background:linear-gradient(135deg,#e3f2fd,#ffffff);
+    font-family:Arial,sans-serif;
+}
